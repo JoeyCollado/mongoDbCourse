@@ -17,4 +17,4 @@
 
 #document = is a field of group value pairs to represent an object
 #collection = is a group of one or more documents 
-//database = is a group of one or more collections 
+#database = is a group of one or more collections 
