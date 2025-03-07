@@ -2,7 +2,7 @@
 
 #MongoDB = is a no sql database management system that can manage huge data, use a nosql format unlike sql which is relational
 #N = not 
-//O = only
+#O = only
 //S = structured
 //Q = query
 //L = language
