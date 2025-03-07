@@ -11,7 +11,7 @@
 # = instead of table we stored data as a single document
 # = each document is kind of like a single row in a table in sql
 # = data is stored as field value pairs, similar to json format, but technically it's bsawn binary javascript object notation
-// = both behaves similarly
+# = both behaves similarly
 
 // = general idea is = data which is frequently accessed together is stored together rather than in separate tables
 
