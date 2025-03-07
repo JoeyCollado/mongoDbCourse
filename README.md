@@ -4,7 +4,7 @@
 
 # N = not 
 # O = only
-//S = structured
+#S = structured
 //Q = query
 //L = language
 // = data stores in various formats
