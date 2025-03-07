@@ -6,6 +6,6 @@
 # O = only
 # S = structured
 # Q = query
-#L = language
+# L = language
 # = data stores in various formats
 # = instead of table we stored data as a single document
