@@ -15,6 +15,6 @@
 
 # = general idea is = data which is frequently accessed together is stored together rather than in separate tables
 
-//document = is a field of group value pairs to represent an object
+#document = is a field of group value pairs to represent an object
 //collection = is a group of one or more documents 
 //database = is a group of one or more collections 
