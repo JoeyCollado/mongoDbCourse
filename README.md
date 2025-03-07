@@ -9,7 +9,7 @@
 # L = language
 # = data stores in various formats
 # = instead of table we stored data as a single document
-// = each document is kind of like a single row in a table in sql
+# = each document is kind of like a single row in a table in sql
 // = data is stored as field value pairs, similar to json format, but technically it's bsawn binary javascript object notation
 // = both behaves similarly
 
