@@ -1,4 +1,5 @@
 # mongoDbCourse
+  Learning a new database technology
 
 # MongoDB = is a no sql database management system that can manage huge data, use a nosql format unlike sql which is relational
 
