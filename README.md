@@ -1,7 +1,7 @@
 # mongoDbCourse
 
 #MongoDB = is a no sql database management system that can manage huge data, use a nosql format unlike sql which is relational
-//N = not 
+#N = not 
 //O = only
 //S = structured
 //Q = query
