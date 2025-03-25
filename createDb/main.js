@@ -8,6 +8,7 @@
 //you can automatically create a database by using (use)
 //example = use school (if db name is not been created yet)
 
+//Insert (1)
 //how to insert document in db
 //db.students.insertOne({name: "Spongebob", age:17, gpa:3.14}) = example
 
@@ -15,4 +16,10 @@
 //db.students.find() = example
 
 //how to insert many documents at once
+//db.students.insertOne({name:"Joey Collado", age: 18, gpa: 5.0, fulltime: true }) //insert one document with many data types
 //db.students.insertMany([{name:"patrick", age:38, gpa:1.5}, {name:"sandy", age:21, gpa:4.0}, {name:"squid", age:22, gpa:4.4}])  = example
+
+
+//Data types (2)
+//string, integer, double, boolean, date objects, null, arrays, nested documents
+//db.students.insertOne({name:"Joey Collado", age: 18, gpa: 5.0, fulltime: true, registerDate: new Date(), graduationDate: null, courses: ["criminology", "education", "Com Sci", ], address: {street:"123 fake street", city:"bikini", zip: 1860} })
