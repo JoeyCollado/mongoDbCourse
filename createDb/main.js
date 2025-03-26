@@ -23,3 +23,21 @@
 //Data types (2)
 //string, integer, double, boolean, date objects, null, arrays, nested documents
 //db.students.insertOne({name:"Joey Collado", age: 18, gpa: 5.0, fulltime: true, registerDate: new Date(), graduationDate: null, courses: ["criminology", "education", "Com Sci", ], address: {street:"123 fake street", city:"bikini", zip: 1860} })
+
+
+//Sorting and Limiting (3)
+
+//sort = sort document in descent or ascent order
+//db.students.find() = return all documents
+
+//sort = db.collectionName.find().sort({fieldName:alphabeticalOrder})
+//ex   = db.students.find().sort({name:1})
+//ex   = db.students.find().sort({name:-1})
+
+
+//limit = limit document that is shown to us
+//      = db.dbName.find().limit(numberOfDocuments)
+//ex    = db.dbName.find().limit(1) = return 1 document 
+
+//combine both
+//      = db.students.find().sort({gpa:-1}.limit(1), return gpa in descending order of only 1 document
