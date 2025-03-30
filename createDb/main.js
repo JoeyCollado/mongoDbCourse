@@ -41,3 +41,12 @@
 
 //combine both
 //      = db.students.find().sort({gpa:-1}.limit(1), return gpa in descending order of only 1 document
+
+//find (6)
+
+//db.students.find({queryParam},)
+//db.students.find({name:"squid"}) //returns any document that has a name "squid" // apply to any data
+//db.students.find({name:"squid", age: 22})
+//db.students.find({query}, {projection}) //return specific fields
+//db.students.find({}, {name:true}) //example
+//db.students.find({id:false}, name:true) //example2
