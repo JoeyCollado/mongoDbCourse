@@ -50,3 +50,18 @@
 //db.students.find({query}, {projection}) //return specific fields
 //db.students.find({}, {name:true}) //example
 //db.students.find({id:false}, name:true) //example2
+
+//update(7)
+// db.students.updateOne(filter, update)
+//db.students.updateOne(filter, update)
+//ex (update)
+//db.students.updateOne({name:"joey"}, {$set:{fullTime:true}})
+//ex (unset)
+//db.students.updateOne({name:"joey"}, {$unset:{fulltime:""}})  
+//update many = db.students.updateMany(filter, update)
+//ex (update)
+//db.students.updateMany({}, {$set:{fullTime:false}})
+//ex (unset)
+//db.students.updateMany({name:"squid"}, {$unset:{fullTime:""}})
+//ex (check if documents have fulltime field)
+//db.students.updateMany({fulltime:{$exists:false}}, {$set:{fulltime:true}})
