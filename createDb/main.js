@@ -65,3 +65,13 @@
 //db.students.updateMany({name:"squid"}, {$unset:{fullTime:""}})
 //ex (check if documents have fulltime field)
 //db.students.updateMany({fulltime:{$exists:false}}, {$set:{fulltime:true}})
+
+
+//delete(8)
+//db.students.deleteOne({filter})
+//db.students.deleteMany({filter})
+
+//ex
+//db.students.deleteOne({name:joey})
+//db.students.deleletMany({fullTime:false})
+//db.students.deleteMany({registerDate:{$exists:false}})
