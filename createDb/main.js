@@ -75,3 +75,21 @@
 //db.students.deleteOne({name:joey})
 //db.students.deleletMany({fullTime:false})
 //db.students.deleteMany({registerDate:{$exists:false}})
+
+//comparison query operators (9)
+//return data based on value comparisons
+
+//ex
+//db.students.find({name:{$ne:"spongebob"}} = not equal, this gets all documents where name does not equal to spongebob
+//db.students.find({age:{$lt:20}}) = find documents where age is less than 20
+//db.students.find({age:{$lte:20}}) = find documents where age is less than or equal to 20
+//db.students.find({age:{$gt:20}}) = find documents where age is greater than 20   
+//db.students.find({age:{$gte:20}}) = find documents where age is greater than or equal to 20
+//db.students.find({gpa:{$gte:3, $lte:4}}) // get students with gpa greater than 3 and less than or equal to 4, we can use two or more comparison operators
+
+
+// in operator = we can return all records that have one of these matching values
+
+//ex
+//db.students.find({name:{$in:["Spongebob", "patrick", "sandy"]}}) // find all records that has a name of these three
+//db.students.find({name:{$nin:["Spongebob", "patrick", "sandy"]}}) // not in operator
