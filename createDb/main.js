@@ -93,3 +93,29 @@
 //ex
 //db.students.find({name:{$in:["Spongebob", "patrick", "sandy"]}}) // find all records that has a name of these three
 //db.students.find({name:{$nin:["Spongebob", "patrick", "sandy"]}}) // not in operator
+
+// logical operators
+
+/**
+ 
+
+Name	Description
+$and	Joins query clauses with a logical AND and returns all documents that match the conditions of both clauses.
+$not	Inverts the effect of a query expression and returns documents that do not match the query expression.
+$nor	Joins query clauses with a logical NOR and returns all documents that fail to match both clauses.
+$or	    Joins query clauses with a logical OR and returns all documents that match the conditions of either clause.
+ */
+
+//ex
+
+//$and  
+//db.students.find({$and: [{fullTime:true}, {age:{$lte:22}}]}) =  if two condition is true
+
+//$or
+//db.students.find({$or: [{fullTime:true}, {age:{$lte:22}}]}) = atleast one condition needs to be true
+
+//$nor
+//db.students.find({$nor: [{fullTime:true}, {age:{$lte:22}}]}) = both condition needs to be false
+
+//$not
+//db.students.find({age:{$not:{$gte:30}}}) = get document that is not the specified condition, does the opposite
