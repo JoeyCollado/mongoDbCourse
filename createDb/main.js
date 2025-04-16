@@ -94,7 +94,7 @@
 //db.students.find({name:{$in:["Spongebob", "patrick", "sandy"]}}) // find all records that has a name of these three
 //db.students.find({name:{$nin:["Spongebob", "patrick", "sandy"]}}) // not in operator
 
-// logical operators
+// logical operators(9)
 
 /**
  
@@ -119,3 +119,23 @@ $or	    Joins query clauses with a logical OR and returns all documents that mat
 
 //$not
 //db.students.find({age:{$not:{$gte:30}}}) = get document that is not the specified condition, does the opposite
+
+//indexes (10)
+
+/*
+Indexes = support the efficient execution of queries in mongoDB. without indexes, mongodb must perform a collection scan.
+          every document is a collection, to select those documents that match the query statement.
+*/
+
+//
+//db.students.find({name:"joey"}).explain("executionStats")
+
+//to apply index
+// db.students.createIndex({name: 1}) = apply index at name field in ascending order
+// db.students.createIndex({name: -1}) = apply index at name field in descending order
+
+//get all indexes
+//db.students.getIndexes()
+
+//how to drop index
+//db.students.dropIndex("name_1") ("indexName")
