@@ -139,3 +139,15 @@ Indexes = support the efficient execution of queries in mongoDB. without indexes
 
 //how to drop index
 //db.students.dropIndex("name_1") ("indexName")
+
+//collection(11) = group of documents (a database is a group of collections)
+//show collections - show currenct collections
+//db.createCollection("teachers") - create collection of teachers
+//db.createCollection("teachers", {capped:true, size:10000000, max:100}, {autoIndexId:false}) - capped means collection created has limit size
+//                                                                       - size define size limit
+//                                                                       - max defined maxinum documents allowed
+//                                                                       - autoIndexed:true or false if you want auto indexing
+
+//db.course.drop() - drop collection, course is a collection name
+
+
